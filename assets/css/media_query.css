@@ -1,0 +1,87 @@
+@media screen and (max-width: 576px) {
+  .Hero_title {
+    font-family: "Noto Serif Display", serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 40px;
+    color: var(--primary_color);
+  }
+
+  .hero_logo {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .logo_container {
+    height: 50vh;
+    width: 100%;
+    background-color: var(--primary_color);
+  }
+
+  .hero_image {
+    height: 50vh;
+    object-fit: cover;
+    width: 100%;
+    /* border-bottom: 50rem !important;  */
+    border-bottom-left-radius: 50rem;
+    border-bottom-right-radius: 50rem;
+  }
+
+  .catalog_title {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+    color: white;
+    font-size: 30px;
+  }
+
+  /* About us style  */
+  .about_image01 {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-bottom-right-radius: 50%;
+  }
+
+  .about_logo_container {
+    background-color: var(--primary_color);
+    height: 250px;
+    width: 100%;
+    border-top-left-radius: 50%;
+  }
+
+  .about_logo {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  /* Wedding style  */
+  .wedding_text {
+    color: white;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  /* About styling  */
+  .about_title {
+    font-size: 40px;
+  }
+
+  /* Ceo statement  */
+  .ceo_image {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 15px solid white;
+  }
+
+  .ceo_text {
+    color: #eecbcb;
+    width: 100%;
+  }
+}

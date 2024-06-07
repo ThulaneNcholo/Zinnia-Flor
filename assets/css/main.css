@@ -1,0 +1,291 @@
+:root {
+  --primary_color: #970000;
+  --orange_color: #f25334;
+  --white_color: rgb(255, 255, 255);
+  --background_color: #f1f3f2;
+  --green_color: #75c137;
+  --turquoise_color: #26a6a1;
+}
+
+body {
+  /* font-family: "Cactus Classical Serif", serif;
+  font-weight: 400;
+  font-style: normal; */
+
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  cursor: pointer;
+  color: var(--primary_color);
+}
+
+body::before {
+  display: block;
+  content: "";
+  height: 133px;
+}
+
+.contact_btn {
+  background-color: #efd0d0 !important;
+  color: white !important;
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Animation Overflow  */
+.overflow_content {
+  overflow: hidden !important;
+}
+
+/* Hero styling  */
+
+.Hero_title {
+  font-family: "Noto Serif Display", serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 80px;
+  color: var(--primary_color);
+}
+
+.hero_logo {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.logo_container {
+  height: 80vh;
+  width: 100%;
+  background-color: var(--primary_color);
+}
+
+.hero_image {
+  height: 80vh;
+  object-fit: cover;
+  width: 100%;
+  /* border-bottom: 50rem !important;  */
+  border-bottom-left-radius: 50rem;
+  border-bottom-right-radius: 50rem;
+}
+
+/* Catalog style start  */
+
+.catalog_title {
+  /* font-family: "Inria Serif", serif;
+  font-weight: 400;
+  font-style: normal; */
+
+  /* font-family: "Noto Serif Display", serif;
+  font-weight: 400;
+  font-style: italic; */
+
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: italic;
+
+  color: white;
+  font-size: 50px;
+}
+
+.service_image {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.service_title {
+  font-family: "Noto Serif Display", serif;
+  font-weight: 400;
+  font-style: italic;
+  color: white;
+}
+
+/* Wedding style  */
+.wedding_text {
+  color: white;
+  width: 50%;
+  font-size: 18px;
+}
+
+/* About style  */
+.about_title {
+  font-family: "Noto Serif Display", serif;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--primary_color);
+  font-size: 80px;
+}
+
+.about_image01 {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  border-bottom-right-radius: 50%;
+}
+
+.about_logo_container {
+  background-color: var(--primary_color);
+  height: 400px;
+  width: 100%;
+  border-top-left-radius: 50%;
+}
+
+.about_logo {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.about_btn {
+  border-color: var(--primary_color) !important;
+  color: var(--primary_color) !important;
+}
+
+/* Ceo statement  */
+.red_background {
+  background-color: var(--primary_color);
+  width: 100%;
+}
+
+.ceo_image {
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 20px solid white;
+}
+
+.ceo_title {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: italic;
+  color: white;
+}
+
+.ceo_text {
+  color: #eecbcb;
+  width: 50%;
+}
+
+.ceo_text_header {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+  color: white;
+}
+
+/* why us style   */
+.us_container {
+  height: 100px;
+  width: 60px;
+  background-color: var(--primary_color);
+}
+
+.us_title {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+  color: black;
+}
+
+.us_sub_title {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.us_main_title {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--primary_color);
+}
+
+/* Mission and Vision style  */
+.vision_text {
+  width: 70%;
+}
+
+/* Contact us style  */
+.contact_title {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--primary_color);
+}
+
+.text_underline_deco {
+  background-color: var(--primary_color);
+  width: 100%;
+  height: 1px;
+  margin-top: 5px;
+}
+
+.send_btn {
+  border-color: var(--primary_color) !important;
+  color: var(--primary_color) !important;
+}
+
+/* Footer style  */
+.footer_logo {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+/* Navbar  */
+.navbar_container {
+  background-color: #efd0d0;
+}
+.navbar_image {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.navbar_links {
+  font-size: 18px;
+}
+
+.navbar_logo_sm {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+/* Offcanvas Menu style  */
+.menu_background {
+  background-color: var(--primary_color);
+}
+
+.menu_logo {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.menu_text {
+  /* font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: italic; */
+  color: #efd0d0;
+}
+
+.menu_text_deco {
+  background-color: white;
+  height: 2px;
+  width: 100%;
+}

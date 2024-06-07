@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- Media Query CSS -->
+    <link rel="stylesheet" href="assets/css/media_query.css" />
+
+    <!-- Noto+Serif+Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Inria+Serif  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- PT+Serif  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Serif&display  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Quicksand font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS animation  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <style>
+      .hero_background {
+        background-image: url("assets/Images/flower_bg01.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+      }
+
+      .catalog_bg {
+        background-image: url("assets/Images/catalog_bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+      }
+
+      .service_container01 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url("assets/Images/services_01.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px;
+        width: 100%;
+      }
+
+      .service_container02 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url("assets/Images/service_02.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px;
+        width: 100%;
+      }
+
+      .service_container03 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url("assets/Images/service_03.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px;
+        width: 100%;
+      }
+
+      .service_container04 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url("assets/Images/service_04.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px;
+        width: 100%;
+      }
+
+      .about_bg {
+        background-image: url("assets/Images/about_background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+      }
+
+      .us_background {
+        background-image: url("assets/Images/about_02.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        padding-top: 100px;
+        padding-bottom: 200px;
+      }
+
+      .wedding_background {
+        background-image: linear-gradient(
+            rgba(151, 0, 0, 0.279),
+            /* rgba equivalent of #970000 with 40% opacity */
+              rgba(151, 0, 0, 0.279)
+              /* rgba equivalent of #970000 with 40% opacity */
+          ),
+          url("assets/Images/weddings_main_bg.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        width: 100%;
+      }
+
+      .mission_background {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url("assets/Images/mission02.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        width: 100%;
+        border-top-left-radius: 50rem;
+        border-top-right-radius: 50rem;
+      }
+
+      .vision_background {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url("assets/Images/vision02.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        width: 100%;
+        border-top-left-radius: 50rem;
+        border-top-right-radius: 50rem;
+      }
+      .contact_image_bg {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)
+          ),
+          url("assets/Images/contact_image.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 500px;
+        border-bottom-left-radius: 50rem;
+        border-top-left-radius: 50rem;
+      }
+
+      @media screen and (max-width: 576px) {
+        .service_container01 {
+          height: 200px;
+        }
+
+        .service_container02 {
+          height: 200px;
+        }
+
+        .service_container03 {
+          height: 200px;
+        }
+
+        .service_container04 {
+          height: 200px;
+        }
+
+        .catalog_bg {
+          background-image: url("assets/Images/occasion_bg03.png");
+          background-repeat: repeat;
+          background-size: contain;
+          width: 100%;
+          padding-top: 100px;
+          padding-bottom: 100px;
+        }
+
+        .us_background {
+          padding-top: 60px;
+          padding-bottom: 60px;
+        }
+      }
+    </style>
+
+    <title>Zinnia Flor</title>
+  </head>
+  <body>
+    <!-- ======= Navbar start Large screen  ======= -->
+    <section
+      class="navbar_container py-3 fixed-top shadow-sm d-none d-lg-block"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col d-flex align-items-center">
+            <div class="row w-100">
+              <div class="col">
+                <p class="navbar_links">HOME</p>
+              </div>
+              <div class="col">
+                <p class="navbar_links">SERVICES</p>
+              </div>
+              <div class="col">
+                <p class="navbar_links">ABOUT</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-5">
+            <center>
+              <img
+                src="assets/Images/zinna_logo.jpeg"
+                alt=""
+                class="navbar_image"
+              />
+            </center>
+          </div>
+          <div class="col d-flex align-items-center">
+            <div class="row w-100">
+              <div class="col">
+                <p class="navbar_links">GALLERY</p>
+              </div>
+              <div class="col">
+                <p class="navbar_links">CONTACT</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Navbar start Small screen  ======= -->
+    <section
+      class="navbar_container py-2 fixed-top shadow-sm d-block d-lg-none"
+    >
+      <div class="d-flex justify-content-evenly">
+        <div class="d-flex align-items-center">
+          <a
+            data-bs-toggle="offcanvas"
+            href="#offcanvasExample"
+            aria-controls="offcanvasExample"
+          >
+            <p class="mb-0" style="font-size: 14px">MENU</p>
+          </a>
+        </div>
+
+        <img
+          src="assets/Images/zinna_logo.jpeg"
+          alt=""
+          class="navbar_logo_sm"
+        />
+        <div class="d-flex align-items-center">
+          <p class="mb-0" style="font-size: 14px">CONTACT</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Navbar Offcanvas Menu Start  ======= -->
+    <div
+      class="offcanvas offcanvas-start menu_background"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+        <button
+          class="border-0"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+          style="background-color: #970000"
+        >
+          <i class="bi bi-x-lg text-white" style="font-size: 20px"></i>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <center>
+          <img
+            src="assets/Images/zinna_logo.jpeg"
+            alt=""
+            class="menu_logo mb-5"
+          />
+        </center>
+
+        <div class="row">
+          <div class="col">
+            <h5 class="menu_text">HOME</h5>
+          </div>
+          <div class="col d-flex justify-content-end">
+            <i class="bi bi-chevron-right text-white"></i>
+          </div>
+        </div>
+        <div class="menu_text_deco mt-2 mb-4"></div>
+        <!-- end menu item  -->
+        <div class="row">
+          <div class="col">
+            <h5 class="menu_text">SERVICES</h5>
+          </div>
+          <div class="col d-flex justify-content-end">
+            <i class="bi bi-chevron-right text-white"></i>
+          </div>
+        </div>
+        <div class="menu_text_deco mt-2 mb-4"></div>
+        <!-- end menu item  -->
+        <div class="row">
+          <div class="col">
+            <h5 class="menu_text">ABOUT</h5>
+          </div>
+          <div class="col d-flex justify-content-end">
+            <i class="bi bi-chevron-right text-white"></i>
+          </div>
+        </div>
+        <div class="menu_text_deco mt-2 mb-4"></div>
+        <!-- end menu item  -->
+        <div class="row">
+          <div class="col">
+            <h5 class="menu_text">GALLERY</h5>
+          </div>
+          <div class="col d-flex justify-content-end">
+            <i class="bi bi-chevron-right text-white"></i>
+          </div>
+        </div>
+        <div class="menu_text_deco mt-2 mb-4"></div>
+        <!-- end menu item  -->
+        <div class="row">
+          <div class="col">
+            <h5 class="menu_text">CONTACT</h5>
+          </div>
+          <div class="col d-flex justify-content-end">
+            <i class="bi bi-chevron-right text-white"></i>
+          </div>
+        </div>
+        <div class="menu_text_deco mt-2 mb-4"></div>
+        <!-- end menu item  -->
+
+        <center>
+          <img
+            src="assets/Images/offcanvas_image.jpeg"
+            alt=""
+            class="menu_logo mt-5 border border-3"
+          />
+        </center>
+      </div>
+    </div>
+
+    <!-- ======= Hero Section  ======= -->
+    <section class="hero_background py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-6 mb-5 d-flex align-items-center">
+            <div class="overflow_content">
+              <h4
+                data-aos="fade-up"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+              >
+                Welcome to Zinnia Flor
+              </h4>
+              <h1
+                class="Hero_title"
+                data-aos="fade-up"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+              >
+                Create a Floral Moment
+              </h1>
+              <p
+                data-aos="fade-up"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+              >
+                Zinnia Flor is a premier floral design studio dedicated to
+                creating exquisite arrangements for all of life's significant
+                moments. From somber funerals to joyful baby showers, elegant
+                weddings to lively parties, and even unique divorce parties, we
+                cater to a wide range of events with our stunning floral
+                creations.
+              </p>
+              <button
+                type="button"
+                class="btn contact_btn shadow-sm rounded-0 mt-4 px-5 py-3 d-none d-md-block"
+                data-aos="fade-up"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+              >
+                CONTACT US
+              </button>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-6 mb-5">
+            <div class="row overflow_content">
+              <div
+                class="col-6 col-md-6 mb-5"
+                data-aos="fade-left"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+              >
+                <div
+                  class="logo_container rounded-pill d-flex align-items-center justify-content-center"
+                >
+                  <img
+                    src="assets/Images/zinna_logo.jpeg"
+                    alt=""
+                    class="hero_logo"
+                  />
+                </div>
+              </div>
+              <div
+                class="col-6 col-md-6 mb-5"
+                data-aos="fade-left"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+              >
+                <img
+                  src="assets/Images/hero_image.jpg"
+                  alt=""
+                  class="hero_image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Catalog Section  ======= -->
+    <section class="catalog_bg">
+      <div class="container py-5">
+        <center>
+          <h1 class="catalog_title fw-bold">ARRANGEMENTS FOR</h1>
+          <h1 class="catalog_title fw-bold">EVERY OCCASION</h1>
+        </center>
+
+        <div class="row my-5 overflow_content">
+          <div
+            class="col-12 col-md-6 col-lg-3 mb-4"
+            data-aos="zoom-in"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            <div
+              class="service_container01 rounded-pill d-flex align-items-center justify-content-center"
+            >
+              <h1 class="service_title">Funerals</h1>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-6 col-lg-3 mb-4"
+            data-aos="zoom-in"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            <div
+              class="service_container02 rounded-pill d-flex align-items-center justify-content-center"
+            >
+              <h1 class="service_title">Baby Showers</h1>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-6 col-lg-3 mb-4"
+            data-aos="zoom-in"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            <div
+              class="service_container03 rounded-pill d-flex align-items-center justify-content-center"
+            >
+              <h1 class="service_title">Parties</h1>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-6 col-lg-3 mb-4"
+            data-aos="zoom-in"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            <div
+              class="service_container04 rounded-pill d-flex align-items-center justify-content-center"
+            >
+              <h1 class="service_title">Divorce Parties</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wedding_background overflow_content">
+      <div class="container">
+        <center>
+          <h1
+            class="Hero_title text-white fw-bold"
+            data-aos="fade-right"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            Enchanting
+          </h1>
+          <h1
+            class="Hero_title text-white fw-bold mb-5"
+            data-aos="fade-right"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            Wedding Florals
+          </h1>
+          <div>
+            <p
+              class="wedding_text"
+              data-aos="fade-right"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              At Zinnia Flor, we believe that flowers have the power to
+              transform any event into a memorable and beautiful experience. Let
+              us be a part of your special moments and add a touch of our zest.
+            </p>
+            <p
+              class="wedding_text"
+              data-aos="fade-right"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              Your wedding day should be nothing short of magi- cal, and our
+              team specializes in creating enchanting floral arrangements that
+              reflect your unique style and vision. From bridal bouquets to
+              centerpieces, we ensure that every detail is perfect.
+            </p>
+          </div>
+        </center>
+      </div>
+    </section>
+
+    <!-- ======= About Section  ======= -->
+    <section class="about_bg">
+      <div class="container">
+        <div class="row overflow_content">
+          <div class="col-12 col-md-6 mb-5 d-flex align-items-center">
+            <div class="overflow_content">
+              <h1
+                class="about_title mb-4"
+                data-aos="fade-up"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+              >
+                ABOUT ZINNIA FLOR
+              </h1>
+              <p
+                data-aos="fade-up"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+              >
+                Zinnia Flor was established in 2019 and is a 100% black
+                women-owned and managed florist company with a Level 1 BEE
+                accreditation.
+              </p>
+              <p
+                data-aos="fade-up"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+              >
+                Zinnia Capital is your friendly neighborhood florist with a
+                passion for creating beauty through flowers. With several years
+                of experience in the floral industry, Zinnia Flor has honed its
+                craft and developed a keen eye for design.
+              </p>
+              <p
+                data-aos="fade-up"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+              >
+                flowers have the power to transform any event into a memorable
+                and beautiful experience
+              </p>
+              <button
+                data-aos="fade-up"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                type="button"
+                class="btn contact_btn shadow-sm rounded-0 mt-5 px-5 py-3"
+              >
+                CONTACT US
+              </button>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 mb-5 overflow_content">
+            <img
+              src="assets/Images/service_03.jpg"
+              alt=""
+              class="about_image01"
+              data-aos="fade-up"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            />
+            <div
+              class="about_logo_container d-flex align-items-center justify-content-center"
+              data-aos="fade-up"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              <img
+                src="assets/Images/zinna_logo.jpeg"
+                alt=""
+                class="about_logo"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= CEO statement  ======= -->
+    <section class="red_background py-5">
+      <div class="container overflow_content">
+        <center>
+          <img
+            src="assets/Images/ceo_image.png"
+            alt=""
+            class="ceo_image mb-5"
+            data-aos="fade-right"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          />
+          <h1
+            class="ceo_title mb-5"
+            data-aos="fade-right"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            CEO STATEMENT
+          </h1>
+          <div class="overflow_content">
+            <p
+              class="ceo_text mb-4"
+              data-aos="fade-right"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              Specializing in unique and personalized arrangements for weddings,
+              events, funeral arrangements, and every- day occasions, Zinnia
+              Flor infuses each creation with a touch of elegance and whimsy.
+              Its signature style blends classic floral design principles with a
+              modern twist, resulting in stunning displays that never fail to
+              impress.
+            </p>
+            <p
+              class="ceo_text mb-4"
+              data-aos="fade-right"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              When Zinnia Flor is not busy creating floral masterpieces or
+              holding a master class, you can find us at the market sourcing the
+              fresh- est blooms from local grow- ers or sharing our knowledge
+              and expertise through workshops and classes.
+            </p>
+            <h3
+              class="ceo_text_header"
+              data-aos="fade-right"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              Whether you're celebrating a milestone moment, saying "I love
+              you," or simply brightening someone's day or expressing your final
+              words, Zinnia Flor is dedicated to helping you express your
+              emotions through the language of flowers.
+            </h3>
+          </div>
+        </center>
+      </div>
+    </section>
+
+    <!-- ======= Why us ======= -->
+    <div class="container pt-5">
+      <center>
+        <h3 class="us_sub_title">Why Choose</h3>
+        <h1 class="us_main_title">Zinnia Flor</h1>
+      </center>
+    </div>
+    <section class="us_background">
+      <div class="container">
+        <div class="row overflow_content">
+          <div
+            class="col-12 col-md-6 mb-5"
+            data-aos="fade-right"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            <div
+              class="us_container rounded-pill d-flex align-items-center justify-content-center mb-5"
+            >
+              <h1 class="text-white fw-bold">01</h1>
+            </div>
+            <h3 class="us_title fw-bold">Customized Creations</h3>
+            <p>
+              We work closely with our clients to understand their preferences
+              and create bespoke floral arrangements that exceed their
+              expectations
+            </p>
+          </div>
+          <!-- end item  -->
+          <div
+            class="col-12 col-md-6 mb-5"
+            data-aos="fade-left"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            <div
+              class="us_container rounded-pill d-flex align-items-center justify-content-center mb-5"
+            >
+              <h1 class="text-white fw-bold">02</h1>
+            </div>
+            <h3 class="us_title fw-bold">Quality and Freshness</h3>
+            <p>
+              We source the finest flowers to ensure that each arrangement is
+              vibrant,long-lasting and visually stunning
+            </p>
+          </div>
+          <!-- end item  -->
+          <div
+            class="col-12 col-md-6 mb-5"
+            data-aos="fade-right"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            <div
+              class="us_container rounded-pill d-flex align-items-center justify-content-center mb-5"
+            >
+              <h1 class="text-white fw-bold">03</h1>
+            </div>
+            <h3 class="us_title fw-bold">Professional Team</h3>
+            <p>
+              Our experienced florists are passion- ate about their craft and
+              dedicated to delivering exceptional service with a personal touch
+            </p>
+          </div>
+          <!-- end item  -->
+          <div
+            class="col-12 col-md-6 mb-5"
+            data-aos="fade-left"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            <div
+              class="us_container rounded-pill d-flex align-items-center justify-content-center mb-5"
+            >
+              <h1 class="text-white fw-bold">04</h1>
+            </div>
+            <h3 class="us_title fw-bold">Event Expertise</h3>
+            <p>
+              With a wide range of event experience, we have the skills and
+              creativity to bring your vision to life, no matter the occasion.
+            </p>
+          </div>
+          <!-- end item  -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Mission and Vision ======= -->
+    <section class="catalog_bg">
+      <div class="container">
+        <div class="row overflow_content">
+          <div class="col-12 col-md-6 mb-5">
+            <div
+              class="mission_background d-flex align-items-center justify-content-center h-100 overflow_content"
+            >
+              <div>
+                <center>
+                  <h1
+                    class="service_title fw-bold mb-5"
+                    data-aos="fade-up"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                  >
+                    Mission
+                  </h1>
+                  <p
+                    class="text-white vision_text"
+                    data-aos="fade-up"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                  >
+                    At Zinnia Flor, we are dedicated to bringing nature's beauty
+                    into the lives of our customers through exquisite floral
+                    arrangements. With a passion for creativity and a commitment
+                    to quality, we strive to exceed expectations by providing
+                    personalized service and unforgettable floral experiences.
+                    Our mis- sion is to spread joy, express emotions, and create
+                    lasting memories with every bloom we deliver.
+                  </p>
+                </center>
+              </div>
+            </div>
+          </div>
+          <!-- end item  -->
+          <div class="col-12 col-md-6 mb-5">
+            <div
+              class="vision_background d-flex align-items-center justify-content-center h-100 overflow_content"
+            >
+              <div>
+                <center>
+                  <h1
+                    class="service_title fw-bold mb-5"
+                    data-aos="fade-up"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                  >
+                    Vision
+                  </h1>
+                  <p
+                    class="text-white vision_text"
+                    data-aos="fade-up"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                  >
+                    Our vision at Zinnia Flor is to be recognized as the premier
+                    destination for floral elegance and innovation. We aim to
+                    inspire and delight our customers with stunning arrangements
+                    that capture the essence of nature's splendor. Through
+                    continuous innovation, sustainable practices, and unwavering
+                    dedication to excellence, we envision ourselves as the
+                    leading force in the floral industry, enrich- ing lives and
+                    uplifting spirits across communities worldwide.
+                  </p>
+                </center>
+              </div>
+            </div>
+          </div>
+          <!-- end item  -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Contact  ======= -->
+    <section class="about_bg">
+      <!-- Contact  -->
+      <div class="container">
+        <div class="row overflow_content">
+          <div
+            class="col-12 col-md-6"
+            data-aos="fade-right"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            <div class="contact_image_bg"></div>
+          </div>
+          <div
+            class="col-12 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            <div>
+              <h1 class="contact_title mb-5">CONTACT US</h1>
+              <form>
+                <div class="mb-5">
+                  <input
+                    type="text"
+                    class="form-control border-0"
+                    id="exampleFormControlInput1"
+                    placeholder="Your Name"
+                  />
+                  <div class="text_underline_deco"></div>
+                </div>
+                <!-- end input item  -->
+                <div class="mb-5">
+                  <input
+                    type="text"
+                    class="form-control border-0"
+                    id="exampleFormControlInput1"
+                    placeholder="Your Telephone"
+                  />
+                  <div class="text_underline_deco"></div>
+                </div>
+                <!-- end input item  -->
+                <div class="mb-5">
+                  <input
+                    type="text"
+                    class="form-control border-0"
+                    id="exampleFormControlInput1"
+                    placeholder="Your Email"
+                  />
+                  <div class="text_underline_deco"></div>
+                </div>
+                <!-- end input item  -->
+                <button
+                  type="button"
+                  class="btn contact_btn rounded-0 px-5 py-2 px-5 py-3 shadow-sm"
+                >
+                  SEND
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Footer  ======= -->
+    <section class="container">
+      <!-- Footer  -->
+      <div class="container" style="margin-top: 200px">
+        <footer class="py-3 my-4 overflow_content">
+          <center>
+            <img
+              src="assets/Images/zinna_logo.jpeg"
+              alt=""
+              class="footer_logo mb-5"
+              data-aos="zoom-in"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            />
+          </center>
+          <ul
+            class="nav justify-content-center border-bottom pb-3 mb-5"
+            style="border-color: #970000 !important"
+          >
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-muted fw-bold">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-muted fw-bold">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-muted fw-bold">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-muted fw-bold">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-muted fw-bold">Contact</a>
+            </li>
+          </ul>
+          <p class="text-center text-muted mb-4">
+            354 Rivonia Boulevard Lillipark Office Park, Progress House, Gauteng
+            2129
+          </p>
+          <p class="text-center text-muted mb-4">+27 71 664 1447</p>
+          <p class="text-center text-muted mb-4">inquiries@zinniaflor.co.za</p>
+          <p class="text-center text-muted">© 2024 Zinnia Flor, Inc</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Animation Scripts start  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Animation Scripts end  -->
+  </body>
+</html>
